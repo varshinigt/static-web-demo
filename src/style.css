@@ -18,7 +18,7 @@ body {
 
 header {
   background: #003366;
-  color: white;
+  color: grey;
   padding: 2rem;
   text-align: center;
 }
@@ -37,7 +37,7 @@ header {
   padding: 1rem;
   border: none;
   background: transparent;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
   white-space: nowrap;
   transition: all 0.2s ease;
