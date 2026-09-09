@@ -17,8 +17,8 @@ body {
 }
 
 header {
-  background: #003366;
-  color: grey;
+  background: #003367;
+  color: white;
   padding: 2rem;
   text-align: center;
 }
@@ -37,7 +37,7 @@ header {
   padding: 1rem;
   border: none;
   background: transparent;
-  font-weight: 700;
+  font-weight: 800;
   cursor: pointer;
   white-space: nowrap;
   transition: all 0.2s ease;
@@ -45,7 +45,7 @@ header {
 
 .tab-btn:hover { background: #d8dadf; }
 .tab-btn.active {
-  background: white;
+  background: grey;
   color: #003366;
   border-bottom: 3px solid #003366;
 }
