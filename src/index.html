@@ -16,11 +16,11 @@
     <!-- Navigation Tabs -->
     <nav class="tabs" id="nav-tabs">
       <button class="tab-btn active" onclick="showTab('pes')">PES University</button>
-      <button class="tab-btn" onclick="showTab('se')">About me</button>
+      <button class="tab-btn" onclick="showTab('se')">Software Engineering</button>
+      <button class="tab-btn" onclick="showTab('aboutme')">About Me</button>
       <button class="tab-btn" onclick="showTab('cicd')">CI/CD Pipeline</button>
       <button class="tab-btn" onclick="showTab('instructable')">Instructable</button>
       <button class="tab-btn" onclick="showTab('project')">Project Details</button>
-      <!-- STUDENTS WILL ADD "About Me" TAB HERE -->
     </nav>
 
     <!-- Tab Contents -->
@@ -32,7 +32,7 @@
         <p>Departments available : CSE, AIML, ECE, EEE, BT</p>
         <h3>About PES University</h3>
         <p>PES University focuses on education, research and innovation in engineering, technology and other disciplines.</p>
-        <h3>Session Objectives</h3>
+        <h3>Workshop Objectives</h3>
         <ul>
           <li>Understand Software Engineering concepts</li>
           <li>Learn Git and GitHub</li>
@@ -43,9 +43,20 @@
       </div>
 
       <div id="se" class="tab-content">
+        <h2>Software Engineering</h2>
+        <p>SE (Software Engineering) hands on session</p>
+        <h3>Topics Covered</h3>
+        <ul>
+          <li>Version control with Git and GitHub</li>
+          <li>Continuous Integration and Continuous Deployment</li>
+          <li>Automated testing</li>
+          <li>Deployment with GitHub Pages</li>
+        </ul>
+      </div>
+
+      <div id="aboutme" class="tab-content">
         <h2>About Me</h2>
         <p>Name : Varshini A</p>
-        <p>SE(Software Engineering) hands on session</p>
         <h3>My Interests</h3>
         <ul>
           <li>Software Development</li>
@@ -60,20 +71,20 @@
         <p>Continuous Integration (CI) tests code automatically. Continuous Deployment (CD) ships code to production.</p>
         <h3>How CI/CD Works</h3>
         <ol>
-         <li>Developer writes code</li>
-         <li>Code is pushed to GitHub</li>
-         <li>GitHub Actions starts automatically</li>
-         <li>The application is built</li>
-         <li>Automated tests are executed</li>
-         <li>The website is deployed</li>
+          <li>Developer writes code</li>
+          <li>Code is pushed to GitHub</li>
+          <li>GitHub Actions starts automatically</li>
+          <li>The application is built</li>
+          <li>Automated tests are executed</li>
+          <li>The website is deployed</li>
         </ol>
 
         <h3>Benefits of CI/CD</h3>
         <ul>
-         <li>Faster software delivery</li>
-         <li>Automatic testing</li>
-         <li>Fewer deployment errors</li>
-         <li>Consistent software releases</li>
+          <li>Faster software delivery</li>
+          <li>Automatic testing</li>
+          <li>Fewer deployment errors</li>
+          <li>Consistent software releases</li>
         </ul>
       </div>
 
@@ -81,57 +92,50 @@
         <h2>Instructable: GitHub Actions & GitPages</h2>
         <p>This website is automatically built and published using GitHub Actions workflows targeting GitHub Pages.</p>
         <h3>Steps to Deploy Using GitHub Pages</h3>
+        <ol>
+          <li>Create a GitHub repository.</li>
+          <li>Add your HTML and CSS files.</li>
+          <li>Commit and push the files to GitHub.</li>
+          <li>Create a GitHub Actions workflow.</li>
+          <li>Configure the workflow to deploy the website.</li>
+          <li>Enable GitHub Pages.</li>
+          <li>Open the generated website URL.</li>
+        </ol>
 
-      <ol>
-        <li>Create a GitHub repository.</li>
-        <li>Add your HTML and CSS files.</li>
-        <li>Commit and push the files to GitHub.</li>
-        <li>Create a GitHub Actions workflow.</li>
-        <li>Configure the workflow to deploy the website.</li>
-        <li>Enable GitHub Pages.</li>
-        <li>Open the generated website URL.</li>
-      </ol>
-
-      <h3>Tools Used</h3>
-      <ul>
-         <li>HTML</li>
-         <li>CSS</li>
-         <li>JavaScript</li>
-         <li>Git</li>
-         <li>GitHub</li>
-         <li>GitHub Actions</li>
-         <li>GitHub Pages</li>
-      </ul>
+        <h3>Tools Used</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Git</li>
+          <li>GitHub</li>
+          <li>GitHub Actions</li>
+          <li>GitHub Pages</li>
+        </ul>
       </div>
+
       <div id="project" class="tab-content">
+        <h2>Project Details</h2>
+        <p><strong>Project:</strong> CI/CD Workshop Website</p>
+        <p><strong>University:</strong> PES University</p>
+        <p><strong>Technology:</strong> HTML, CSS and JavaScript</p>
 
-        
-      <h2>Project Details</h2>
+        <h3>Project Goal</h3>
+        <p>
+          The goal of this project is to understand how a simple website can be
+          automatically tested and deployed using a CI/CD pipeline.
+        </p>
 
-      <p><strong>Project:</strong> CI/CD Workshop Website</p>
-      <p><strong>University:</strong> PES University</p>
-      <p><strong>Technology:</strong> HTML, CSS and JavaScript</p>
-
-      <h3>Project Goal</h3>
-
-  <p>
-    The goal of this project is to understand how a simple website can be
-    automatically tested and deployed using a CI/CD pipeline.
-  </p>
-
-  <h3>Technologies Used</h3>
-
-  <ul>
-    <li>HTML for webpage structure</li>
-    <li>CSS for styling</li>
-    <li>JavaScript for tab navigation</li>
-    <li>GitHub for source code management</li>
-    <li>GitHub Actions for CI/CD</li>
-    <li>GitHub Pages for deployment</li>
-  </ul>
-</div>
-
-      <!-- STUDENTS WILL ADD "About Me" CONTENT HERE -->
+        <h3>Technologies Used</h3>
+        <ul>
+          <li>HTML for webpage structure</li>
+          <li>CSS for styling</li>
+          <li>JavaScript for tab navigation</li>
+          <li>GitHub for source code management</li>
+          <li>GitHub Actions for CI/CD</li>
+          <li>GitHub Pages for deployment</li>
+        </ul>
+      </div>
     </main>
   </div>
 
@@ -139,12 +143,12 @@
     function showTab(tabId) {
       document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
       document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-      
+
       const targetContent = document.getElementById(tabId);
       if (targetContent) targetContent.classList.add('active');
-      
+
       const targetBtn = Array.from(document.querySelectorAll('.tab-btn'))
-        .find(b => b.getAttribute('onclick')?.includes(tabId));
+        .find(b => b.getAttribute('onclick')?.includes("'" + tabId + "'"));
       if (targetBtn) targetBtn.classList.add('active');
     }
   </script>
