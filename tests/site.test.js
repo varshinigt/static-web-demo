@@ -8,11 +8,14 @@ assert(fs.existsSync('src/index.html'), "❌ Error: src/index.html is missing!")
 assert(fs.existsSync('src/style.css'), "❌ Error: src/style.css is missing!");
 
 const html = fs.readFileSync('src/index.html', 'utf8');
+
 const requiredTabs = [
   'PES University',
-  'About me',
+  'Software Engineering',
+  'About Me',
   'CI/CD Pipeline',
-  'Instructable'
+  'Instructable',
+  'Project Details'
 ];
 
 // 2. Check required course tabs exist in HTML
@@ -28,6 +31,13 @@ requiredTabs.forEach(tabName => {
   );
 });
 
-
+// 3. Check every tab button has a matching content section
+const buttonTargets = [...html.matchAll(/showTab\('([^']+)'\)/g)].map(m => m[1]);
+buttonTargets.forEach(id => {
+  assert(
+    html.includes(`id="${id}"`),
+    `❌ Test Failed: No content section found for tab "${id}"!`
+  );
+});
 
 console.log("[PASSED] All static tab content checks passed successfully!");
